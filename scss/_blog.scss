@@ -221,7 +221,7 @@
         p {
             margin-bottom: 0;
             margin-right: 10px;
-            color: #505add;
+            color: #e62b1e;
         }
 
         ul {
@@ -248,7 +248,7 @@
 
                     &:hover,
                     &:focus {
-                        color: #505add;
+                        color: #e62b1e;
                     }
                 }
 
@@ -289,7 +289,7 @@
 
             &:hover,
             &:focus {
-                color: #505add;
+                color: #e62b1e;
             }
         }
     }
@@ -306,7 +306,7 @@
         @include flex(0 0 125px);
         max-width: 125px;
         width: 125px;
-        border: 3px solid #505add;
+        border: 3px solid #e62b1e;
         border-radius: 50%;
         margin-right: 20px;
 
