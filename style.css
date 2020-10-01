@@ -1393,12 +1393,12 @@ input:required {
       width: 100%; }
   .single-speaker-area .social-info {
     position: absolute;
-    top: -180px;
+    top: -400px;
     right: 0;
     z-index: 22;
     background-color: #e62b1e;
     padding: 15px;
-    border-radius: 0 10px 0 10px;
+    border-radius: 10px;
     text-align: center;
     -webkit-transition-duration: 800ms;
     -o-transition-duration: 800ms;
