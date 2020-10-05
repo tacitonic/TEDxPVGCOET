@@ -502,13 +502,13 @@ input:required {
 .confer-btn {
   position: relative;
   z-index: 1;
-  height: 46px;
-  line-height: 46px;
+  height: 30px;
+  line-height: 30px;
   font-size: 14px;
   font-weight: 500;
   border: none;
   display: inline-block;
-  padding: 0 25px;
+  padding: 0 10px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5px;
