@@ -15,6 +15,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
 
 </head>
 
@@ -122,11 +123,30 @@
                         <div class="speaker-info">
                             <h5>Greg Ellis</h5>
                             <!-- <p>Founder</p> -->
-                            <a class="btn confer-btn" href="#">Know more <i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <a class="btn confer-btn btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Know more <i class="zmdi zmdi-long-arrow-right"></i></a>
 
                         </div>
                     </div>
                 </div>
+
+                <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+                    <div class="container">
+                        <div class="row">
+                            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                            <div class="col-lg-8">
+                                <div class="image-container">
+                                    <iframe width=480 height=270 src="https://www.youtube.com/embed/d7f4yrJ6RoQ"></iframe>
+                                </div> <!-- end of image-container -->
+                            </div> <!-- end of col -->
+                            <div class="col-lg-4">
+                                <h3>Greg Ellis</h3>
+                                <hr>
+                                Greg Ellis is an American drummer and percussionist, known for his work in film and world music, living in Los Angeles. He has performed and recorded with artists from almost every continent, including Zakir Hussain, Airto, KODO, Mickey Hart’s Planet Drum, Juno Reactor, Billy Idol, Sonu Nigam, Sussan Deyhim, Hamed Nikpay, Bickram Ghosh, Chiwoniso Maraire, Sugizo and many more.
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    </div> <!-- end of container -->
+                </div> <!-- end of lightbox-basic -->
+                <!-- end of details lightbox 1 -->
 
                 <!-- Single Speaker Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -364,6 +384,8 @@
     <script src="../js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="../js/default-assets/active.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/custom-script.js"></script>
 
 </body>
 
