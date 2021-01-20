@@ -3,7 +3,7 @@ To start 'Gulp' => npm run start
 -------------------------------- */
 
 File Structure:
-confer/
+TEDxPVGCOET/
 └── src/
     ├── css/
     │   ├── default-assets/
@@ -16,6 +16,9 @@ confer/
     │   ├── owl.carousel.min.css
     │   ├── style.css
     ├── fonts/
+    ├── events/
+    |   ├──2020.html
+    |   ├──2021.html
     ├── img/
     │   ├── bg-img/
     │   ├── core-img/
