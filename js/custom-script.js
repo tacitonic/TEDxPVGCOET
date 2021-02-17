@@ -53,6 +53,4 @@
 		mainClass: 'my-mfp-slide-bottom'
 	});
 
-	$('div#clock').countdown('2021/03/28',)
-
 })(jQuery);
