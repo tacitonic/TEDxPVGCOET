@@ -36,6 +36,11 @@
 @import url(css/material-design-iconic-font.min.css);
 @import url(css/style.css);
 /* :: 01.0 Reboot Area CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0; }
@@ -2405,6 +2410,7 @@ input:required {
     background: #e62b1e;
     background: -moz-linear-gradient(120deg, #e62b1e 0%, #e62b1e 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.7;
     position: absolute;
