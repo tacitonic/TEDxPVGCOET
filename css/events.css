@@ -62,7 +62,9 @@ button{
     top: -5vw;
     background-color: white;
     border: none;
+    cursor: pointer;
 }
+
 
 .speaker_image{
     border: 3px solid #D6291B;
@@ -127,6 +129,11 @@ button{
     color: white;
     background-color: #D1291D;
     border-color: #D1291D;
+}
+
+.speaker_image div button:hover{
+    color: red;
+    background-color: white;
 }
 
 .speakers .event-desc{

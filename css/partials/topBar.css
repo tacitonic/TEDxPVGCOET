@@ -19,6 +19,7 @@
     height: 3vw;
     width: 12vw;
     margin: 1vw 0vw 2vw 12.5vw;
+    cursor: pointer;
 }
 
 .topBar_options{

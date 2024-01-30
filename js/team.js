@@ -83,3 +83,6 @@ function scrollToTop() {
     targetElement.scrollIntoView({ behavior: 'smooth' });
 }
   
+function toHome() {
+    window.location.href = 'index.html'
+}

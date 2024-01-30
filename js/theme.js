@@ -91,3 +91,7 @@ function scrollToTop() {
     var targetElement = document.getElementById(`${ele}`);
     targetElement.scrollIntoView({ behavior: 'smooth' });
 }
+
+function toHome() {
+    window.location.href = 'index.html'
+}

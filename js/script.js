@@ -155,3 +155,8 @@ function scrollToTop() {
   };
 
 
+
+function toHome() {
+    window.location.href = 'index.html'
+}
+

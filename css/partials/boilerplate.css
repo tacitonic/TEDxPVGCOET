@@ -104,4 +104,8 @@ script{
         transition: all 0.5s ease;
         opacity: 0.5;
     }
+
+    img{
+        filter: invert(0);
+    }
 }
