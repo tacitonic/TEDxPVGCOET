@@ -1,0 +1,391 @@
+body{
+    background-color: #181818;
+    background-image: url(../asset/images/Illustration.png);
+    background-size: 100vw;
+    /* height: 5124px; */
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../asset/images/Team_bg.png);
+    background-size: cover;
+    height: 30vw;
+    width: 80vw;
+    border-radius: 30px;
+    margin: 10vw auto 0vw auto;
+}
+
+.hero h1 {
+    font-family: 'Helvetica';
+    margin: 3vw auto 0vw auto;
+    color: white;
+    font-weight: 900;
+    font-size: 4vw;
+    text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.67);
+}
+
+.team_display {
+    width: 60vw;
+    height: 9vw;
+    margin: 2vw auto 0vw auto;
+}
+
+.hero button {
+    width: fit-content;
+    background-color: white;
+    color: red;
+    /* font-weight: 700; */
+    margin: 4vw auto 0vw auto;
+}
+
+.hero button:hover{
+    background-color: white;
+    color: red;
+}
+
+.heads {
+    display: flex;
+    height: fit-content;
+    width: 67vw;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    margin: 5vw auto 5vw auto;
+    font-family: 'Helvetica';
+    color: white;
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+
+.head_layout {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.line2{
+    height: 0.1vw;
+    width: 4vw;
+    margin: 0vw 0vw 2vw 0vw;
+    background-color: white;
+}
+
+.photo_card {
+    display: flex;
+    flex-direction: column;
+    height: 18vw;
+    width: 14vw;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-image: url(../asset/images/Photo_card_bg.png);
+    background-size: cover;
+    overflow: hidden;
+    margin: 2vw 4vw 2vw 0vw;
+}
+
+.photo_card img {
+    height: 10vw;
+    width: 10.5vw;
+    margin: 3vw auto 0vw auto;
+    transition: all 0.5s ease;
+}
+
+.name_bar {
+    background-color: white;
+    color: black;
+    text-align: center;
+    /* height: 100%; */
+    height: 3vw;
+    padding: 1vw;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.name_bar p {
+    color: #777777;
+    font-size: 0.8vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.photo_card:hover img{
+    transform: scale(0.8) translateY(-3vw);
+
+}
+
+.exception{
+    margin-left: 4vw;
+}
+
+.exception2{
+    margin-left: 22.5vw;
+}
+
+.exception3{
+    margin-left: 30vw;
+}
+
+
+
+
+/* DONT DELETE THE COMMENTED LINES ABOVE , IT WILL BE USED IF SOCIAL ACCOUNTS OF ALL MEMBERS IS TO BE DISPLAYED*/
+
+
+.social-links, .lead-links{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 1vw 1vw 2vw 1vw;
+    margin-top: 0vw;
+    transition: all 0.5s ease;
+}
+
+.social-links img, .lead-links img{
+    width: 2vw;
+    height: 2vw;
+    margin: 0vw 1vw;
+}
+
+.photo_card:hover .name_bar, .photo_card:hover .social-links, .photo_card:hover .lead-links{
+    transform: translateY(-4vw);
+}
+
+.photo_card:hover .social-links img, .photo_card:hover .lead-links img{
+    transform: scale(1);
+}
+
+.lead-links{
+    padding: 2vw 1vw;
+}
+
+
+
+/**/
+
+.heading {
+    width: fit-content;
+    height: fit-content;
+    /* border: 1px solid greenyellow; */
+    font-family: 'Helvetica';
+    color: white;
+    margin: 10vw 0vw 0vw 10vw;
+}
+
+.Team_left {
+    /* border: 1px solid pink; */
+    width: 80vw;
+    margin: 2vw auto 0vw auto;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team_desc {
+    width: 28vw;
+    margin: 4vw 12vw 0vw 0vw;
+    font-size: 1.3vw;
+}
+
+.dnp_image {
+    height: 17vw;
+    margin: 2vw 4vw 2vw 0vw;
+
+}
+
+#lno_image {
+    margin-right: 7.5vw;
+}
+
+#mnc_image {
+    width: 36vw;
+}
+
+#fns_image {
+    margin-right: 7vw;
+}
+
+#ed_image {
+    margin-right: 17.5vw;
+}
+
+#cu_image {
+    margin-right: 16.5vw;
+}
+
+.exception .exception5{
+    margin-left: -5vw;
+}
+
+@media only screen and (max-width : 768px) {
+
+
+    .hero {
+        /* display: none; */
+        height: 80vw;
+        width: 90vw;
+        margin: 30vw auto 10vw auto;
+    }
+
+    .hero h1 {
+        font-size: 9vw;
+        margin: 15vw auto 0vw auto;
+    }
+
+    .team_display {
+        width: 80vw;
+        height: 13vw;
+        margin: 8vw auto 0vw auto;
+    }
+
+    .hero button {
+        margin: 10vw auto 0vw auto;
+    }
+
+    .heads {
+        /* display: none; */
+        /* border: 1px solid burlywood; */
+        width: 85vw;
+        font-size: 4vw;
+        margin-bottom: 30vw;
+    }
+
+    .head_layout {
+        padding: 0vw;
+        margin-left: 0.9vw;
+        margin-right: 3vw;
+        margin-bottom: 5vw;
+        text-align: center;
+        /* border: 1px solid burlywood; */
+    }
+
+    .line2{
+        /* display: none; */
+        width: 35vw;
+        margin: -2vw auto 3vw auto
+    }
+
+    .photo_card {
+        height: 50vw;
+        width: 37vw;
+        font-size: 3.5vw;
+    }
+
+    .head_layout .photo_card {
+        margin: 1vw auto 0vw auto;
+    }
+
+    .photo_card img {
+        transform: scale(3);
+        margin: 18vw auto 0vw auto;
+    }
+
+    .name_bar {
+        height: 10vw;
+        margin-top: 10vw;
+        padding: 2vw;
+    }
+
+    .name_bar p {
+        font-size: 2.5vw;
+        margin-top: 1vw;
+    }
+
+    .photo_card:hover img{
+        transform: scale(3);
+    }
+
+    .photo_card:hover .name_bar, .photo_card:hover .social-links{
+        transform: translateY(-55vw);
+    }
+
+    .photo_card:hover .lead-links{
+        transform: translateY(-49vw);
+    }
+
+    .social-links img, .lead-links img{
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw 5vw;
+    }
+
+    .social-links, .lead-links{
+        justify-content: center;
+        padding: 10vw 0vw 10vw 0vw;
+    }
+
+    .social-links img, .lead-links img{
+        transform: scale(1);
+    }
+
+    .photo_card:hover .social-links img, .photo_card:hover .lead-links img{
+        transform: scale(1);
+    }
+
+    .Team_left {
+        /* display: none; */
+        /* border: 1px solid greenyellow; */
+        width: 85vw;
+        margin-bottom: 30vw;
+    }
+
+    .Team_left .photo_card {
+        margin-left: 2.5vw;
+        margin-right: 1vw;
+    }
+
+    .team_desc {
+        display: none;
+    }
+
+    .dnp_image {
+        /* border: 1px solid wheat; */
+        margin-top: 10vw;
+        height: 40vw;
+        margin-bottom: 10vw;
+        margin-left: 2vw;
+    }
+
+    #lno_image {
+        margin-left: 5vw;
+    }
+
+    #mnc_image {
+        width: 80vw;
+    }
+
+    #fns_image {
+        margin-left: 5vw;
+    }
+
+    #ed_image {
+        margin-left: 15vw;
+    }
+
+    #cu_image {
+        margin-left: 15vw;
+    }
+
+    .heading {
+        /* display: none; */
+        font-size: 3.5vw;
+        width: 60vw;
+        font-weight: 200;
+        text-align: center;
+        margin: 10vw auto 0vw auto;
+    }
+
+    .exception4{
+        margin-left: 22vw;
+    }
+
+    .exception .exception5{
+        margin-left: 2vw;
+    }
+
+}

@@ -1,0 +1,182 @@
+.topBar{
+    /* border: 1px solid white; */
+    margin: 0vw 12.5vw 2vw 0vw;
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 1vw;
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    top: 0vw;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    height: 3vw;
+    width: 12vw;
+    margin: 1vw 0vw 2vw 12.5vw;
+}
+
+.topBar_options{
+    /* border: 1px solid blue;  */
+    /* height: fit-content; */
+    margin: 1.2vw 0vw 0vw 25vw;
+
+}
+
+.topBar_toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar{
+    height: 0.2vw;
+    width: 2vw;
+    background-color: #D1291D;
+    margin: 0.4vw 0;
+    border-radius: 10px;
+}
+
+.topBar_options a, .topBar_options p{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.71;
+    margin: 1.5vw 2vw 0vw 2vw;
+    letter-spacing: 0.05vw;
+    transition: all 0.3s ease;
+}
+
+.topBar_options a img{
+    width: 0.8vw;
+    height: 0.8vw;
+    position: relative;
+    top: 0.1vw;
+    left: 0.2vw;
+}
+
+.dropMenu{
+    display: none;
+    background-color: #be160a;
+    height: fit-content;
+    width: 17vw;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.dropMenu ul{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 2vw;
+}
+
+.dropMenu ul li{
+    list-style-type:square;
+    color: white;
+    padding: 0.5vw;
+    margin-left: 1vw;
+}
+
+.dropMenu a{
+    margin: 0vw 0vw 1vw 0vw;
+}
+
+.dropMenu.show{
+    display: flex;
+}
+
+.topBar_options a:hover{
+    opacity: 1;
+    text-shadow: 0px 0px 1vw #D1291D;
+}
+
+.topBar_options button{
+    background-color: transparent;
+    color: #D1291D;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #A8A7A7;
+    margin-left: 2vw;
+    font-size: 1vw;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width : 768px){
+    .topBar{
+        height: 18vw;
+        margin: 0vw 4vw 30vw 0vw;
+        font-size: 4vw;
+    }
+
+    .logo{
+        height: 10vw;
+        width: 40vw;
+        margin: 4vw 0vw 0vw 3vw;
+    }
+
+    .topBar_options{
+
+        display: none;
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 16vw;
+        right: 0vw;
+        width: 100%;
+        padding: 5vw 0vw 15vw 0vw;
+        text-align: center;
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
+    }
+
+    .topBar_options.show{
+        display: flex;
+    }
+
+    .topBar_toggle{
+        display: flex;
+        margin-left: 43vw;
+        margin-top: 5vw;
+    }
+
+    .bar{
+        height: 1vw;
+        width: 8vw;
+        margin: 0.8vw 0;
+    }
+
+    .topBar_options a{
+        margin-top: 10vw;
+        color: white;
+        margin: 10vw auto 0vw auto;
+        font-weight: 500;
+        font-size: 5vw;
+    }
+
+    #Events{
+        display: none;
+    }
+
+    .dropMenu{
+        display: none;
+    }
+
+    .hide{
+        display: flex;
+    }
+
+    .topBar_options button{
+        font-size: 4vw;
+        margin: 10vw auto 0vw auto;   
+        padding: 2vw 6vw 2vw 6vw;
+    }
+}

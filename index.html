@@ -1,567 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Title -->
-    <title>Home • TEDxPVGCOET</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxPVGCOET</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/partials/topBar.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/boilerplate.css">
+    <link rel="stylesheet" href="css/partials/tickets.css">
+    <link rel="stylesheet" href="css/events.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
+    
+    <div class="topBar">
+        <img src="asset\images\TEDxPVGCOET Logo without bg.png" alt="" class="logo">
+        <div class="topBar_options">
+            <a href="" class="links" id="Home">Home</a>
+            <a href="javascipt:void(0)" class="links" id="Events" onclick="DropDown()">Events <img src="asset/images/arrow-down-338-svgrepo-com.svg" alt="" id="dropdown">
+                <div class="dropMenu">  
+                    <ul>
+                        <li>
+                            <a href="" id="2024" >Punarutthan - 2024</a>
+                        </li>
+                        <li>
+                            <a href="" id="2021" >Avant Garde - 2021</a>
+                        </li>
+                        <li>
+                            <a href="" id="2020" >Take the leap - 2020</a>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+            <a href="" class="links hide" id="punarutthan">Punarutthan - 2024</a>
+            <a href="" class="links hide" id="avant">Avant Garde - 2021</a>
+            <a href="" class="links hide" id="leap">Take the leap - 2020</a>
+            <a href="" class="links" id="Team">Team</a>
+            <a href="" class="links" id="Theme">Theme</a>
+            <button onclick="redirectToForm()">Register</button>
+            
+        </div>
+        <div class="topBar_toggle" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
-    <!-- /Preloader -->
 
-    <!-- Header Area Start -->
-    <header class="header-area">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="conferNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" width="280rem"
-                            alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                <!-- <li class="active"><a href="index.html">Home</a></li> -->
-                                <li><a href="#">Events</a>
-                                    <ul class="dropdown">
-                                        <li><a href="events/2021.html">Avant-garde&nbsp&nbsp2021</a></li>
-                                        <li><a href="events/2020.html">Take&nbspthe&nbspLeap!&nbsp&nbsp2020</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="speakers.html">Speakers</a></li>
-                                <li><a href="team/2021.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-
-                            <!-- Register Button -->
-                            <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" target="_blank" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Register <i
-                                    class="zmdi zmdi-long-arrow-right"></i></a>
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
+    <div class="hero">
+        <div class="display_text">
+            <p>Ideas worth</p>
+            <p style="color: #D1291D;">Spreading</p>
+            <img src="asset\images\Vector 204.png" alt="" style="height: 2vw; width: 19vw; margin-top: -5vw; margin-bottom: 1vw;">
         </div>
-    </header>
-    <!-- Header Area End -->
+        <div class="hero_list">
+            <div class="list_row">
+                <div class="list_column">
+    
+                    <div class="box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 12L10 7H10.8102L14 9.01428V9.98571L10.8102 12H10Z" fill="#D1291D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M10 12L10 7H10.8102L14 9.01428V9.98571L10.8102 12H10Z" fill="#D1291D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 18.5V15H19V5.5H20V4H19H5H4V5.5H5V15H11.25V18.5H8V20H16V18.5H12.75ZM6.5 5.5V13.5H17.5V5.5H6.5Z" fill="#D1291D"></path> </g></svg>
+                    </div>
+                    <p>Immersive live <br> experience </p>
+                </div>
+                <div class="list_column">
+    
+                    <div class="box">
+                        <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#D1291D;} </style> <g> <rect x="54.929" y="284.162" class="st0" width="402.142" height="24.109"></rect> <polygon class="st0" points="75.036,384.717 97.463,384.717 97.463,355.746 414.537,355.746 414.537,384.717 436.965,384.717 457.071,321.279 54.929,321.279 "></polygon> <rect x="111.121" y="369.396" class="st0" width="289.759" height="142.604"></rect> <circle class="st0" cx="256" cy="69.512" r="69.512"></circle> <path class="st0" d="M256,156.942c-85.155,0-106.004,112.531-106.004,112.531h212.008C362.004,269.473,341.155,156.942,256,156.942 z"></path> </g> </g></svg>
+                
+                    </div>
+                    <p>Reputed speaker <br> Sessions </p>
+                </div>
+                <div class="list_column">
+    
+                    <div class="box">
+                        <svg viewBox="0 0 1024 1024" fill="#D1291D" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#D1291D"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M981.534498 248.354447l-0.403282-2.01641c-0.403282-1.881982-0.940991-3.629537-1.747555-5.511519-0.134427-0.403282-0.268855-0.940991-0.537709-1.344273-0.940991-2.150837-2.01641-4.032819-3.226255-5.914802l-1.075419-1.4787c-1.075418-1.4787-2.150837-2.822973-3.49511-4.167246-0.403282-0.403282-0.806564-0.940991-1.209846-1.344274-1.613128-1.613128-3.360683-3.091828-5.242664-4.436101-0.268855-0.134427-0.672137-0.403282-0.940992-0.537709-1.209846-0.806564-2.419691-1.613128-3.763964-2.285264l-430.167378-215.083689c-11.426321-5.645947-24.734624-5.645947-36.026518 0l-430.167378 215.083689c-1.344273 0.672137-2.554119 1.4787-3.763964 2.285264-0.268855 0.134427-0.672137 0.403282-0.940991 0.537709-1.881982 1.344273-3.629537 2.822973-5.242665 4.436101-0.403282 0.403282-0.806564 0.806564-1.209846 1.344274-1.209846 1.344273-2.419691 2.688546-3.49511 4.167246l-1.075418 1.4787c-1.209846 1.881982-2.285264 3.898392-3.226256 5.914802-0.134427 0.403282-0.268855 0.940991-0.537709 1.344273-0.672137 1.747555-1.209846 3.629537-1.747555 5.511519l-0.403282 2.01641c-0.403282 2.419691-0.672137 4.839383-0.672136 7.259074v512.974598c0 15.324713 8.603348 29.170725 22.314932 36.026518l430.167378 215.083689c0.268855 0.134427 0.672137 0.268855 1.075419 0.403282 1.881982 0.940991 4.032819 1.613128 6.049228 2.150837 0.806564 0.268855 1.4787 0.537709 2.285265 0.672137 2.822973 0.672137 5.780374 1.075418 8.737774 1.075418s5.914801-0.403282 8.737775-1.075418c0.806564-0.134427 1.4787-0.537709 2.285265-0.672137 2.150837-0.537709 4.167246-1.344273 6.049228-2.150837 0.268855-0.134427 0.672137-0.268855 1.075419-0.403282l430.167377-215.083689a40.328192 40.328192 0 0 0 22.314933-36.026518V255.613521c-0.268855-2.419691-0.537709-4.839383-0.940991-7.259074zM511.711065 85.56298L851.677721 255.613521l-123.135412 61.567706-199.08684-97.728651c-0.268855-0.134427-0.672137-0.134427-0.940991-0.268854-1.747555-0.806564-3.629537-1.4787-5.511519-2.01641-0.806564-0.268855-1.613128-0.537709-2.554119-0.806564a45.705284 45.705284 0 0 0-6.183656-0.806564c-0.806564 0-1.613128-0.268855-2.419692-0.268854h-0.268854c-5.780374 0-11.291894 1.209846-16.265704 3.49511-0.134427 0-0.268855 0.134427-0.403282 0.134427L287.351892 313.417263 171.744409 255.613521 511.711065 85.56298z m0 596.453955l-139.132261-69.498917 138.728979-77.967837 136.443715 79.446537L511.711065 682.016935zM688.482972 387.352281v157.14552L552.039257 464.916836V320.407483l136.443715 66.944798zM471.382873 464.513554l-144.509353 81.194093V384.126026L471.382873 318.256646v146.256908zM121.871879 512.10082V320.810765l124.345258 62.239842V614.534427c0 0.672137 0.134427 1.344273 0.268854 2.150837l0.403282 4.301674 0.806564 3.898392c0.268855 1.209846 0.672137 2.419691 1.075418 3.629537 0.537709 1.344273 1.075418 2.688546 1.747555 4.032819 0.268855 0.672137 0.537709 1.209846 0.806564 1.881983 0.134427 0.403282 0.537709 0.537709 0.672137 0.940991 1.613128 2.822973 3.49511 5.377092 5.780374 7.662356l0.403282 0.403282a42.075747 42.075747 0 0 0 9.678766 6.99022c0.537709 0.268855 0.940991 0.537709 1.4787 0.806564 0.403282 0.134427 0.672137 0.403282 0.940991 0.672136L471.382873 752.053561V918.340138l-349.510994-174.755497V512.10082zM901.550251 743.584641l-349.510994 174.755497V752.053561l194.785166-97.325369a40.287863 40.287863 0 0 0 22.180505-38.849492c0-0.403282 0.134427-0.806564 0.134427-1.209845V387.083426L901.550251 320.810765V743.584641z"></path></g></svg>
+        
+                    </div>
+                    <p>Platform for thinkers, <br> visionaries and learners </p>
+                </div>
+                <div class="list_column">
+    
+                    <div class="box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 3V21M7 3L11 7M7 3L3 7M14 3H15M14 9H17M14 15H19M14 21H21" stroke="#D1291D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </div>
+                    <p>Growing <br> community</p>
+                </div>
+    
+            </div>
+    
+        </div>
+        <img src="asset\images\Frame 427318929.png" alt="" class="illustration2">
+        <p class="X">X</p>
+        <p class="X"  style="color: #F68178; right: 14vw;">X</p>
+        <p class="X"  style="color: white; top: 9vw;">X</p>
+        <p class="X"  style="color: #FF0404; top: 11vw; right: 12vw;">X</p>
+        <img src="asset\images\Vector 201.png" alt="" class="illustration1">
+        <img src="asset\images\Vector 201.png" alt="" class="illustration1" id="ill1_2" style="opacity: 0.63; top: 14vw; right: 17vw;">
+        <img src="asset\images\Vector 201.png" alt="" class="illustration1" id="ill1_3" style="opacity: 0.36; top: 12vw; right: 16vw;"> 
+        <img src="asset\images\Nisarg Kudgunti.png" alt="" class="licencee">
+        <div class="name_plate">
+            <p id="name1">Nisarg Kudgunti</p>
+            <p style="color: rgb(195, 195, 195);" id="position">Licencee and Organizer</p>
+        </div>
+    </div>
 
-    <!-- Welcome Area Start -->
-    <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax"
-                style="background-image: url(img/bg-img/59.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12">
-                            <div class="welcome-text text-right">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">TEDxPVGCOET<br>2021</h2>
-                                <h6 data-animation="fadeInUp" data-delay="500ms">PVGCOET, Pune</h6>
-                                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" class="btn confer-btn">Register <i
-                                            class="zmdi zmdi-long-arrow-right"></i></a>
-                                </div>
+    <div class="tickets" id="tickets">
+        <div class="side-panel">
+            
+        </div>
+        <div class="ticket-main">
+            <div class="main-1">
+                <div class="date">
+                    <h2>Event <br> Punarutthan</h2>
+                    <div class="circle"><h3>3rd</h3> <p>Feb</p></div>
+                </div>
+                <div class="location">
+                    <div style="display: flex; flex-direction: row;">
+
+                        <img src="asset\images\location.svg" alt="">
+                        <div class="tickets-info">
+                            <p>PVGCOET College</p> 
+                            <p>- College Auditorium</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row;">
+
+                        <img src="asset\images\rupee.svg" alt="">
+                        <div class="tickets-info">
+                            <p>Ticket price</p>
+                            <p> - 600</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="main-2">
+                <div class="time">
+                    <div class="wrap">  
+                      
+                        <div class="countdown">
+                          <div class="bloc-time hours" data-init-value="24">
+                            <span class="count-title">Hours</span>
+                      
+                            <div class="figure hours hours-1">
+                              <span class="top">2</span>
+                              <span class="top-back">
+                                <span>2</span>
+                              </span>
+                              <span class="bottom">2</span>
+                              <span class="bottom-back">
+                                <span>2</span>
+                              </span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Slide -->
-
-        </div>
-
-        <!-- Scroll Icon -->
-        <div class="icon-scroll" id="scrollDown"></div>
-    </section>
-    <!-- Welcome Area End -->
-
-    <!-- About Us And Countdown Area Start -->
-    <section class="about-us-countdown-area section-padding-100-0" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- About Content -->
-                <div class="col-12 col-md-6">
-                    <div class="about-content-text mb-80">
-                        <h6 class="wow fadeInUp" data-wow-delay="300ms">About TEDxPVGCOET</h6>
-                        <h3 class="wow fadeInUp" data-wow-delay="300ms">Ideas worth speading!</h3>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">TEDxPVGCOET brings the unique TED experience to Pune. TEDxPVGCOET is a curated, day-long, immersive live experience bringing speakers, artists, and audience members together with the purpose of sharing perspectives, sparking deep discussions, and inspiring positive networks and impactful actions around ideas that matter. Our aim is to provide a platform where thinkers, visionaries, and learners will be inspired to give talks on a wide array of idea-focused topics to foster learning, provoke conversations that matter, and inspire others.</p>
-                        <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" target="_blank" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Register <i
-                                class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- About Thumb -->
-                <div class="col-12 col-md-6">
-                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/7.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <!-- Our Speakings Area Start -->
-    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60"
-        style="background-image: url(img/bg-img/3.jpg);">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Speaker Panel</p>
-                        <h4>Who’s speaking</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/2021_speakers/Taufiq-Qureshi.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Taufiq Qureshi</h5>
-                            <!-- <p>Announcing soon</p> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img//2021_speakers/Ayesha-Billimoria.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Ayesha Billimoria</h5>
-                            <!-- <p>Announcing soon</p> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/2021_speakers/kuntal-joisher.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Kuntal Joisher</h5>
-                            <!-- <p>Announcing soon</p> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/2021_speakers/priyanka-kasture.png" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Priyanka Kasture</h5>
-                            <!-- <p>Announcing soon</p> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/2021_speakers/Shreenand-Bapat.JPG" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Shreenand Bapat</h5>
-                            <!-- <p>Announcing soon</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area wow fadeInUp" data-wow-delay="300ms">
-                        <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                            <a class="btn confer-btn-white" href="speakers.html">View Details <i
-                                    class="zmdi zmdi-long-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Speakings Area End -->
-
-    <!-- Our Ticket Pricing Table Area Start -->
-    <section class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax"
-        style="background-image: url(img/bg-img/14.jpg);">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Choose a Pass</p>
-                        <h4>Conference Pricing</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Ticket Pricing Table -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Student pass</h6>
-                        <!-- Ticket Icon -->
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p1.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>₹</span>Free</h2>
-                        <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" target="_blank" class="btn confer-btn w-100 mb-30">Register <i
-                                class="zmdi zmdi-long-arrow-right"></i></a>
-                        <!-- Ticket Pricing Table Details -->
-
-                    </div>
-                </div>
-
-                <!-- Single Ticket Pricing Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-ticket-pricing-table active text-center mb-100 wow fadeInUp"
-                        data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Professional pass</h6>
-                        <!-- Ticket Icon -->
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p2.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>₹</span>Free</h2>
-                        <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" target="_blank" class="btn confer-btn w-100 mb-30">Register <i
-                                class="zmdi zmdi-long-arrow-right"></i></a>
-                        <!-- Ticket Pricing Table Details -->
-
-                    </div>
-                </div>
-
-                <!-- Single Ticket Pricing Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Group pass</h6>
-                        <!-- Ticket Icon -->
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p3.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>₹</span>Free</h2>
-                        <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" target="_blank" class="btn confer-btn w-100 mb-30">Register <i
-                                class="zmdi zmdi-long-arrow-right"></i></a>
-                        <!-- Ticket Pricing Table Details -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Ticket Pricing Table Area End -->
-
-    <!-- Contact Area Start -->
-    <section class="contact-our-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Have a question?</p>
-                        <h4>Get in touch!</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-between">
-                <div class="col-12 col-sm-3">
-                    <div class="contact-information mb-100">
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Address:</p>
-                            <h6>PVGCOET<br>44, Vidya Nagari, Shivdarshan, Pune, MH, India 411009</h6>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Email:</p>
-                            <h6>tedx@pvgcoet.ac.in</h6>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Instagram:</p>
-                            <h6>instagram.com/tedxpvgcoet</h6>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Website:</p>
-                            <h6>tedxpvgcoet.com</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-8">
-                    <!-- Contact Form -->
-                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
-                        <div class="contact_form">
-                            <form action="mail.php" method="post" id="main_contact_form">
-                                <div class="contact_input_area">
-                                    <div id="success_fail_info"></div>
-                                    <div class="row">
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name"
-                                                    placeholder="First Name">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name2"
-                                                    placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control mb-30" name="email" id="email"
-                                                    placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject"
-                                                    id="subject" placeholder="Number">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control mb-30" id="message"
-                                                    cols="30" rows="6" placeholder="Message *"></textarea>
-                                            </div>
-                                        </div>
-                                        <!-- Button -->
-                                        <div class="col-12">
-                                            <button type="submit" class="btn confer-btn">Send Message <i
-                                                    class="zmdi zmdi-long-arrow-right"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Area End -->
-
-   <!-- Footer Area Start -->
-    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
-                            <p>In the spirit of 'Ideas Worth Spreading', TED has created TEDx, which is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxPVGCOET where x = independently organized TED event.</p>
-
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="https://www.facebook.com/TEDxPVGCOET/"><i class="zmdi zmdi-facebook"></i></a>
-                                    <a href="https://www.instagram.com/tedxpvgcoet/"><i class="zmdi zmdi-instagram"></i></a>
-                                <a href="https://twitter.com/tedxpvgcoet"><i class="zmdi zmdi-twitter"></i></a>
-                                <a href="https://www.linkedin.com/company/tedxpvgcoet"><i class="zmdi zmdi-linkedin"></i></a>
+                      
+                            <div class="figure hours hours-2">
+                              <span class="top">4</span>
+                              <span class="top-back">
+                                <span>4</span>
+                              </span>
+                              <span class="bottom">4</span>
+                              <span class="bottom-back">
+                                <span>4</span>
+                              </span>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Contact</h5>
-
-                            <!-- Contact Area -->
-                            <div class="footer-contact-info">
-                                <p><i class="zmdi zmdi-map"></i> PVGCOET<br>44, Vidya Nagari, Shivdarshan, Pune, MH, India 411009</p>
-                                <!-- <p><i class="zmdi zmdi-phone"></i> (226) 446 9371</p> -->
-                                <p><i class="zmdi zmdi-email"></i><a href="mailto:tedx@pvgcoet.ac.in" style="color: white;">tedx@pvgcoet.ac.in</a></p>
-                                <p><i class="zmdi zmdi-globe"></i><a href="https://tedxpvgcoet.com" style="color: white;">tedxpvgcoet.com</a></p>
+                          </div>
+                      
+                          <div class="bloc-time min" data-init-value="0">
+                            <span class="count-title">Minutes</span>
+                      
+                            <div class="figure min min-1">
+                              <span class="top">0</span>
+                              <span class="top-back">
+                                <span>0</span>
+                              </span>
+                              <span class="bottom">0</span>
+                              <span class="bottom-back">
+                                <span>0</span>
+                              </span>        
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Site links</h5>
-
-                            <!-- Footer Nav -->
-                            <ul class="footer-nav">
-                                <li><a href="/index.html">Home</a></li>
-                                <li><a href="/speakers.html">Speakers</a></li>
-                                <li><a href="/team/2021.html">Team</a></li>
-                                <li><a href="/contact.html">Contact</a></li>
-                                <li><a href="https://forms.gle/9C6kJ9fZWa4o8gLa9">Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Gallery</h5>
-
-                            <!-- Footer Gallery -->
-                            <div class="footer-gallery">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <a href="img/bg-img/21.jpg" class="single-gallery-item"><img src="img/bg-img/21.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/22.jpg" class="single-gallery-item"><img src="img/bg-img/22.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/23.jpg" class="single-gallery-item"><img src="img/bg-img/23.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/24.jpg" class="single-gallery-item"><img src="img/bg-img/24.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/25.jpg" class="single-gallery-item"><img src="img/bg-img/25.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/26.jpg" class="single-gallery-item"><img src="img/bg-img/26.jpg" alt=""></a>
-                                    </div>
-                                </div>
+                      
+                            <div class="figure min min-2">
+                             <span class="top">0</span>
+                              <span class="top-back">
+                                <span>0</span>
+                              </span>
+                              <span class="bottom">0</span>
+                              <span class="bottom-back">
+                                <span>0</span>
+                              </span>
                             </div>
+                          </div>
+                      
+                          <div class="bloc-time sec" data-init-value="0">
+                            <span class="count-title">Seconds</span>
+                      
+                              <div class="figure sec sec-1">
+                              <span class="top">0</span>
+                              <span class="top-back">
+                                <span>0</span>
+                              </span>
+                              <span class="bottom">0</span>
+                              <span class="bottom-back">
+                                <span>0</span>
+                              </span>          
+                            </div>
+                      
+                            <div class="figure sec sec-2">
+                              <span class="top">0</span>
+                              <span class="top-back">
+                                <span>0</span>
+                              </span>
+                              <span class="bottom">0</span>
+                              <span class="bottom-back">
+                                <span>0</span>
+                              </span>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                 </div>
+                <button class="get-ticket" onclick="redirectToForm()">
+                    GET TICKETS
+                </button>
+               
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about_us">
+        <div class="about_us_images">
+            <img src="asset\images\t2.png" alt="">
+        </div>
+        <div class="about_us_content">
+            <p style="font-weight: 700;">
+                <span style="color: white; margin-right: 1vw;" id="About">About</span>
+                <span style="color: #D1291D;" id="us">us</span>
+            </p>
+            <p style="color: white;" id="About_us_desc">
+                Ted is an annual event that brings together
+                the world’s leading thinkers and doers to
+                share ideas that matter in any discipline -
+                technology, entertainment, design - the three
+                broad subject areas that are collectively
+                shaping our future, as well as science, art,
+                humanities, business, development. In fact,
+                the event is broader still, showcasing the
+                ideas that matter in any discipline
+            
+            </p>
+            <button onclick="redirectToForm()">Register</button>
+            
+        </div>
+    </div>
+    <img src="asset\images\X.png" alt="" class="Big_X">
+
+    <div class="goals">
+        <p style="font-weight: 700;" id="Our_goals">
+            <span style="margin-right: 0.5vw;">Our  </span>
+            <span style="color: #D6291B;">Goals</span>
+        </p>
+
+        <div class="goals_content">
+            <div class="content_row">
+                <p>We aim to exhibit unique and
+                    obscure transformational ideas
+                    to inspire, motivate and move
+                    our attendees</p>
+                <p>We are doing this to give a
+                    voice to unheard stories
+                    because we believe that there's
+                    more than meets the eye to our
+                    community: the unseen
+                    potential is huge</p>
+                <p>To bring the unique TED experience to
+                    Pune and 
+                    sharing perspectives, sparking deep discussions.</p>
+            </div>
+            <img src="asset\images\Tree.png" alt="">
+            <div class="content_row2">
+                <p>Experience live performances
+                    and get a chance to network
+                    with the speakers and
+                    likeminded attendees</p>
+                <p>Spread ideas
+                    that inspire people to become
+                    more productive and
+                    successful</p>
+                <p>To
+                    provide a platform where thinkers, visionaries, and
+                    learners will be inspired to give talks on a wide array
+                    of idea-focused topics to foster learning, provoke
+                    conversations that matter, and inspire others</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="speakers">
+        <p style="font-weight: 700;" id="The_Speakers">
+            <span style="margin-right: 0.5vw;">The  </span>
+            <span style="color: #D6291B;">Speakers</span>
+        </p>
+        <div class="speaker_images">
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/nomad-shubhum.jpg); ">
+                <div>
+                    Nomad Shubham <br>
+                    <p>Nomad Shubham, a 22-year-old full-time traveler, embodies the idea that the more one explores, the more they realize how much of the world remains uncharted. His YouTube channel, boasting over 2.93 million subscribers, showcases his unique travel adventures. Starting from humble beginnings, he initially funded his trips by teaching mathematics online and relying on pocket money. </p>
+                    
+                </div>
+            </div>
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/Sonal-Ved.jpg); ">
+                <div>
+                    Sonal Ved <br>
+                    <p>Sonal Ved, the accomplished food writer and Vogue India's food editor, shapes the magazine's gastronomic content with her culinary expertise. She has made a lasting impact on India's culinary scene through captivating features in publications like Times of India, TimeOut (Mumbai), Uppercrust magazine, Verve magazine, and Hindustan Times.
+                    </p>
+
+                </div>
+            </div>
+            <div class="speaker_image" style=" background-image: url(asset/images/Speakers/Swati-Dhaitankar.jpg); ">
+                <div>
+                    Swati Daithankar <br>
+                    <p>Swati Daithankar, a distinguished Bharatanatyam artist, emerged as a beacon in the realm of dance. Graduating with top honors from Bombay University in English Literature, she delved into the world of Bharatanatyam at Nalanda Dance Research Centre.
+                    </p>
+                </div>
+            </div>
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/Muneet-Dhiman.jpg); background-size: cover;">
+                <div>
+
+                    Muneet Dhiman<br>
+    
+                        <p>Muneet Dhiman is an educationist and a speaker on the subject matter of education, parenting, sustainability and system design. He is the founder and Kulapati of Vidyakshetra Gurukulam in Bangalore, a non-residential panchkosha based Gurukulam for the current times. It was built over last 13 years and his vision is to replicate the Vidyakshetra model across 108 centres in Bharat and subsequently across the globe.  
+                        </p>
+                </div>
+            </div>
+            <div class="speaker_image" style=" background-image: url(asset/images/Speakers/Vasant-Shinde.jpg);">
+                <div>
+                    Vasant Shinde <br>
+                    <p>Adjunct professor at National Institute of Advanced Studies, IIC campus, Bangalore.
+                        Former professor and vice-chancellor at Deccan College. Renowned for his research in
+                        South Asian Archaeology and brings expertise to archaeological studies and academic
+                        administration</p>
+                </div>
+            </div>
+            
+            <div class="speaker_image" style=" background-image: url(asset/images/Speakers/santosh-khadsare.jpg);">
+                <div>
+                    Lt Col Dr. Santosh Khadsare <br>
+                    <p>Lt Col (Dr) Santosh Khadsare, an Indian Army veteran, serves as the Vice President of Digital Forensics & Incident Response (DFIR) at eSec Forte Technologies. With 25 years of experience in Cyber Security, DFIR, and related fields, he holds numerous qualifications including CHFI, MCFE, CEH, and more. He led a Digital Forensic Lab at CERT-In and received the Digital Forensic Analyst Excellence Award in 2021.</p>
+                </div>
+            </div>
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/Siddharth-Mayur.jpg);">
+                <div>
+                    Siddharth Mayur  <br>
+                    <p>Founder and CEO at h2epower, MPowerInside and homi_hydrogen, a Working
+                        President at MahaChess. A first generation social entrepreneur with a mission to bring
+                        about energy security and energy independence to the masses using renewable and
+                        clean energy power
+                        </p>
+                </div>
+            </div>
+            
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/Shri-Shakhir-Khan.jpg);">
+                <div>
+                    Shri Shakhir Khan <br>
+                    <p>Shri Shakir Khan stands as a luminary in the realm of Hindustani instrumental music, inheriting the rich legacy of the legendary Etawah Gharana. Trained under the illustrious Ustad Shahid Parvez Khan for 25 years, Shakir epitomizes the eighth generational link in an unbroken lineage of musical brilliance, rooted in the sitar and surbahar.
+
+                        </p>
+                </div>
+            </div>
+
+            <!-- <div class="speaker_image" style="background-color: #D1291D;">
+                
+            </div> -->
+
+
+
+            
+        </div>
+        <p>Be a part of our journey by registering to the event</p>
+        <button onclick="redirectToForm()">Register</button>
+        
+    </div>
+
+    <iframe src="https://tedxpvgcoet.substack.com/embed" width="600" height="320" frameborder="0" scrolling="no"></iframe>
+
+
+    <div class="team">
+        <p style="font-weight: 700; margin: auto;" id="Meet_The_team">
+            <span style="margin-right: 0.5vw;">Meet</span>
+            <span style="color: #D6291B;">the Team</span>
+        </p>
+        <div class="team_logo">
+            <div class="icon" onclick="redirectTeam()">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19L8.81562 13.1844C8.65593 12.7689 8.39992 12.4122 8.03751 12.0976C7.80967 11.8998 7.49146 11.7206 6.85504 11.3624L3.94202 9.72255C2.99347 9.18858 2.5192 8.9216 2.2596 8.49142C2 8.06124 2 7.54232 2 6.50448V5.81466C2 4.48782 2 3.8244 2.43934 3.4122C2.87868 3 3.58579 3 5 3Z" fill="#D92E2E"></path> <path opacity="0.5" d="M21.9998 6.50448V5.81466C21.9998 4.48782 21.9998 3.8244 21.5605 3.4122C21.1211 3 20.414 3 18.9998 3L8.81543 13.1844C8.86481 13.3129 8.90498 13.447 8.93625 13.5872C8.99981 13.8722 8.99981 14.2058 8.99981 14.8729L8.99981 17.5424C8.99981 18.452 8.99981 18.9067 9.25173 19.2613C9.50366 19.6158 9.95109 19.7907 10.846 20.1406C12.7246 20.875 13.6639 21.2422 14.3319 20.8244C14.9998 20.4066 14.9998 19.4519 14.9998 17.5424V14.8729C14.9998 14.2058 14.9998 13.8722 15.0634 13.5872C15.1957 12.9935 15.4878 12.5095 15.9623 12.0976C16.1901 11.8998 16.5083 11.7206 17.1448 11.3624L20.0578 9.72255C21.0063 9.18858 21.4806 8.9216 21.7402 8.49142C21.9998 8.06124 21.9998 7.54232 21.9998 6.50448Z" fill="#D92E2E"></path> </g></svg>
+                <p>Curation</p>
+            </div>
+            <div class="icon" onclick="redirectTeam()">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M21 22H3C2.59 22 2.25 21.66 2.25 21.25C2.25 20.84 2.59 20.5 3 20.5H21C21.41 20.5 21.75 20.84 21.75 21.25C21.75 21.66 21.41 22 21 22Z" fill="#D92E2E"></path> <path opacity="0.4" d="M19.0206 3.48016C17.0806 1.54016 15.1806 1.49016 13.1906 3.48016L11.9806 4.69016C11.8806 4.79016 11.8406 4.95016 11.8806 5.09016C12.6406 7.74016 14.7606 9.86016 17.4106 10.6202C17.4506 10.6302 17.4906 10.6402 17.5306 10.6402C17.6406 10.6402 17.7406 10.6002 17.8206 10.5202L19.0206 9.31016C20.0106 8.33016 20.4906 7.38016 20.4906 6.42016C20.5006 5.43016 20.0206 4.47016 19.0206 3.48016Z" fill="#D92E2E"></path> <path d="M15.6103 11.5298C15.3203 11.3898 15.0403 11.2498 14.7703 11.0898C14.5503 10.9598 14.3403 10.8198 14.1303 10.6698C13.9603 10.5598 13.7603 10.3998 13.5703 10.2398C13.5503 10.2298 13.4803 10.1698 13.4003 10.0898C13.0703 9.8098 12.7003 9.4498 12.3703 9.0498C12.3403 9.0298 12.2903 8.9598 12.2203 8.8698C12.1203 8.7498 11.9503 8.5498 11.8003 8.3198C11.6803 8.1698 11.5403 7.9498 11.4103 7.7298C11.2503 7.4598 11.1103 7.1898 10.9703 6.9098C10.8303 6.6098 10.7203 6.3198 10.6203 6.0498L4.34032 12.3298C4.21032 12.4598 4.09032 12.7098 4.06032 12.8798L3.52032 16.7098C3.42032 17.3898 3.61032 18.0298 4.03032 18.4598C4.39032 18.8098 4.89032 18.9998 5.43032 18.9998C5.55032 18.9998 5.67032 18.9898 5.79032 18.9698L9.63032 18.4298C9.81032 18.3998 10.0603 18.2798 10.1803 18.1498L16.4603 11.8698C16.1803 11.7698 15.9103 11.6598 15.6103 11.5298Z" fill="#D92E2E"></path> </g></svg>
+                <p>Editorial</p>
+            </div>
+            <div class="icon" onclick="redirectTeam()">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M3.17157 7.17157C4.01536 6.32778 5.22954 6.09171 7.25179 6.02566L8.75208 6.00188C9.1435 6 9.55885 6 10 6H14C14.4412 6 14.8565 6 15.2479 6.00188L16.7482 6.02566C18.7705 6.09171 19.9846 6.32778 20.8284 7.17157C22 8.34315 22 10.2288 22 14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H9.99998C6.22876 22 4.34314 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14C2 10.2288 2 8.34315 3.17157 7.17157Z" fill="#D92E2E"></path> <path d="M12.75 10C12.75 9.58579 12.4142 9.25 12 9.25C11.5858 9.25 11.25 9.58579 11.25 10V10.0102C10.1612 10.2845 9.25 11.143 9.25 12.3333C9.25 13.7903 10.6151 14.75 12 14.75C12.8242 14.75 13.25 15.2826 13.25 15.6667C13.25 16.0507 12.8242 16.5833 12 16.5833C11.1758 16.5833 10.75 16.0507 10.75 15.6667C10.75 15.2525 10.4142 14.9167 10 14.9167C9.58579 14.9167 9.25 15.2525 9.25 15.6667C9.25 16.857 10.1612 17.7155 11.25 17.9898V18C11.25 18.4142 11.5858 18.75 12 18.75C12.4142 18.75 12.75 18.4142 12.75 18V17.9898C13.8388 17.7155 14.75 16.857 14.75 15.6667C14.75 14.2097 13.3849 13.25 12 13.25C11.1758 13.25 10.75 12.7174 10.75 12.3333C10.75 11.9493 11.1758 11.4167 12 11.4167C12.8242 11.4167 13.25 11.9493 13.25 12.3333C13.25 12.7475 13.5858 13.0833 14 13.0833C14.4142 13.0833 14.75 12.7475 14.75 12.3333C14.75 11.143 13.8388 10.2845 12.75 10.0102V10Z" fill="#D92E2E"></path> <path d="M12.0522 1.25H11.9482C11.0497 1.24997 10.3005 1.24995 9.70568 1.32991C9.07789 1.41432 8.51109 1.59999 8.05562 2.05546C7.60015 2.51093 7.41448 3.07773 7.33007 3.70552C7.27275 4.13189 7.25653 5.15147 7.25195 6.02566L8.75224 6.00188C8.75677 5.15523 8.77116 4.24407 8.8167 3.9054C8.87874 3.44393 8.98596 3.24644 9.11628 3.11612C9.24659 2.9858 9.44409 2.87858 9.90555 2.81654C10.3886 2.7516 11.0362 2.75 12.0002 2.75C12.9642 2.75 13.6117 2.7516 14.0948 2.81654C14.5562 2.87858 14.7537 2.9858 14.884 3.11612C15.0144 3.24644 15.1216 3.44393 15.1836 3.9054C15.2292 4.24407 15.2436 5.15523 15.2481 6.00188L16.7484 6.02566C16.7438 5.15147 16.7276 4.13189 16.6702 3.70552C16.5858 3.07773 16.4002 2.51093 15.9447 2.05546C15.4892 1.59999 14.9224 1.41432 14.2946 1.32991C13.6999 1.24995 12.9506 1.24997 12.0522 1.25Z" fill="#D92E2E"></path> </g></svg>
+                <p>Finance & <br> Sponsership</p>
+            </div>
+            <div class="icon" onclick="redirectTeam()">
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M960 1002.666667H64a42.666667 42.666667 0 0 1-42.666667-42.666667V64a42.666667 42.666667 0 0 1 42.666667-42.666667h896a42.666667 42.666667 0 0 1 42.666667 42.666667v896a42.666667 42.666667 0 0 1-42.666667 42.666667z"
+                            fill="#D92E2E"></path>
+                        <path
+                            d="M64 64h896v682.666667H64zM896 896H597.333333a21.333333 21.333333 0 1 1 0-42.666667h298.666667a21.333333 21.333333 0 1 1 0 42.666667z"
+                            fill="#7E2828"></path>
+                        <path
+                            d="M661.333333 896H128a21.333333 21.333333 0 1 1 0-42.666667h533.333333a21.333333 21.333333 0 1 1 0 42.666667z"
+                            fill="#7E2828"></path>
+                        <path
+                            d="M640 960c-47.04 0-85.333333-38.293333-85.333333-85.333333s38.293333-85.333333 85.333333-85.333334 85.333333 38.293333 85.333333 85.333334-38.293333 85.333333-85.333333 85.333333zM426.666667 554.666667a21.269333 21.269333 0 0 1-21.333334-21.333334V277.333333a21.333333 21.333333 0 0 1 33.173334-17.749333l192 128a21.333333 21.333333 0 0 1 0 35.498667l-192 128A21.333333 21.333333 0 0 1 426.666667 554.666667z"
+                            fill="#D92E2E"></path>
+                    </g>
+                </svg>
+                <p>Media & <br> Communication</p>
+            </div>
+            <div class="icon" onclick="redirectTeam()">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path style="fill:#7E2828;"
+                            d="M210.976,512h47.43l118.522-182.804v-14.647c0-43.308-35.108-78.415-78.415-78.415h-29.573 l-78.864,25.614L210.976,512z">
+                        </path>
+                        <path style="fill:#D92E2E;"
+                            d="M153.012,236.133H123.44c-43.308,0-78.415,35.108-78.415,78.415V512h165.952V261.747L153.012,236.133 z">
+                        </path>
+                        <polygon style="fill:#7E2828;"
+                            points="466.976,329.196 418.273,329.196 402.6,339.646 386.926,329.196 362.69,329.196 341.791,425.621 362.69,512 466.976,512 ">
+                        </polygon>
+                        <polygon style="fill:#D92E2E;"
+                            points="258.405,329.196 258.405,512 362.69,512 362.69,329.196 338.453,329.196 322.78,339.646 307.106,329.196 ">
+                        </polygon>
+                        <rect x="307.105" y="329.195" style="fill:#7E2828;" width="31.347" height="58.796"></rect>
+                        <rect x="386.925" y="329.195" style="fill:#D92E2E;" width="31.347" height="58.796"></rect>
+                        <polygon style="fill:#7E2828;" points="210.976,236.133 190.076,262.617 210.976,309.433 268.938,236.133 ">
+                        </polygon>
+                        <g>
+                            <polygon style="fill:#7E2828;" points="153.012,236.133 210.976,309.433 210.976,309.433 210.976,236.133 ">
+                            </polygon>
+                            <path style="fill:#7E2828;"
+                                d="M190.076,50.33l20.899,191.39c12.097,0,23.733-1.965,34.613-5.586 c43.543-14.49,74.942-55.56,74.942-103.969V71.229L190.076,50.33z">
+                            </path>
+                        </g>
+                        <path style="fill:#D92E2E;"
+                            d="M102.579,71.229h-1.16v60.935c0,48.409,31.4,89.481,74.943,103.969 c10.881,3.621,22.517,5.586,34.613,5.586V50.33L102.579,71.229z">
+                        </path>
+                        <path style="fill:#7E2828;"
+                            d="M393.522,39.882h-71.83c-0.641,0-1.16-0.519-1.16-1.16C320.531,17.337,303.194,0,281.809,0h-70.834 l-20.899,35.614l20.899,35.614h109.555h72.99c0.641,0,1.16-0.519,1.16-1.16V41.042C394.682,40.402,394.162,39.882,393.522,39.882z">
+                        </path>
+                        <path style="fill:#EC2533;"
+                            d="M210.976,0h-70.834c-21.386,0-38.722,17.337-38.722,38.722v31.347c0,0.641,0.519,1.16,1.16,1.16 h108.396L210.976,0L210.976,0z">
+                        </path>
+                        <polygon style="fill:#D92E2E;"
+                            points="165.49,313.523 126.896,313.523 116.446,329.196 126.896,344.87 165.49,344.87 "></polygon>
+                        <rect x="88.304" y="313.522" style="fill:#D92E2E;" width="38.595" height="31.347"></rect>
+                    </g>
+                </svg>
+                <p>Logistics & <br> Operation</p>
+            </div>
+            <div class="icon" onclick="redirectTeam()">
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M172.6 806.2l45.3 45.3c25 25 65.5 25 90.5 0L540.8 619l-90.5-90.5-277.7 277.7z" fill="#D92E2E"></path>
+                        <path d="M676.5 483.2l174.9-174.9c25-25 25-65.5 0-90.5l-45.3-45.3L586 392.7l90.5 90.5z" fill="#7E2828"></path>
+                        <path d="M540.738 347.452l220.12-220.12 45.255 45.254-220.12 220.12z" fill="#D92E2E"></path>
+                        <path d="M127.364 760.869L405.042 483.19l45.254 45.254-277.678 277.678z" fill="#7E2828"></path>
+                        <path d="M172.624 308.355l135.763-135.763L806.185 670.39 670.422 806.153z" fill="#D92E2E"></path>
+                        <path
+                            d="M818.5 838.6l20-19.8c20.9-20.8 24.9-53.1 9.8-78.4l-42.1-70-135.8 135.8 70.2 42c25.1 15 57.2 11 77.9-9.6z"
+                            fill="#7E2828"></path>
+                        <path d="M172.6 308.4l135.8-135.8c-25-25-65.5-25-90.5 0l-45.3 45.3c-25 24.9-25 65.5 0 90.5z" fill="#7E2828">
+                        </path>
+                    </g>
+                </svg>
+                <p>Design & <br> Production</p>
+            </div>
+        </div>
+        <button id="fullTeam">View Full Team</button>
+        <img src="asset\images\Team_leads.png" alt="">
+    </div>
+
+    <footer class="footer">
+        <div style="display: flex; flex-direction: column;">
+            <div class="TEDxPVGCOET">
+                <p>
+                    <span style="font-size: 1.6vw; font-weight: 900;">TED</span><span style="font-size: 1.2vw; font-weight: 900;position: relative; top: -0.5vw;">x</span>
+                    <span style="font-size: 1.6vw; font-weight: 900; color: black;">PVGCOET</span><br>
+                    <span style="font-size: 0.5vw; font-weight: 900; position: relative; top: -0.5vw">x</span>
+                    <span style="font-size: 0.5vw; font-weight: 900; color: black; position: relative; top: -0.5vw">= independently organized TED event</span>
+                </p>
+            </div>
+            <div class="social_media">
+                <a href="https://www.facebook.com/TEDxPVGCOET/"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg></a>
+                <a href="https://www.instagram.com/tedxpvgcoet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                fill="#0F0F0F"></path>
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="#0F0F0F"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg></a>
+                <a href="https://x.com/TEDxPVGCOET?s=20">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path
+                            d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/tedxpvgcoet/"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                fill="#0F0F0F"></path>
+                            <path
+                                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                                fill="#0F0F0F"></path>
+                            <path
+                                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                                fill="#0F0F0F"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg></a>
             </div>
         </div>
 
-        <!-- Copyright Area -->
-        <div class="container">
-            <div class="copywrite-content">
-                <div class="row">
-                    <!-- Copyright Text -->
-                    <div class="col-12 col-md-6">
-                        <div class="copywrite-text">
-                           <p> &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved. • Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by TEDxPVGCOET</p>
-                        </div>
-                    </div>
-                    <!-- Footer Menu -->
-                    <div class="col-12 col-md-6">
-                        <div class="footer-menu">
-                            <ul class="nav">
-                                <li><a href="https://www.ted.com/about/our-organization/our-policies-terms"><i class="zmdi zmdi-circle"></i> Policies + Terms </a></li>
+        <div>
+            <div class="contact">
+                <p style="font-weight: 700;" id="footer_contact">Contact</p>
+                <p> PVGCOET 44, <br> Vidya Nagari, Shivdarshan,<br> Pune, MH, India 411009</p>
+                <a href=""><p>tedx@pvgcoet.ac.in</p></a>
+                <a href="">tedxpvgcoet.com</a>
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+
+        
+        <div>
+            <div class="contact">
+                <p style="font-weight: 700;" id="footer_about_us">About Us</p>
+                <p id="footer_about_width">A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="contact">
+                <p style="font-weight: 700;" id="footer_site_links">Newsletter</p>
+                Be the first one to know about <br> events, updates and much more <br>
+                from TEDxPVGCOET organization <br>
+                <a href="https://tedxpvgcoet.substack.com/embed"><button id="Newsletter">Subscribe</button></a>
+
+            </div>
+        </div>
+
+        <div class="end_bar">
+            <div class="line"></div>
+            <div style="display: flex; flex-direction: row; margin: 0.6vw auto 0vw auto;">
+                <p style="font-size: 0.8vw; margin: 0vw 58vw 0vw 0vw; color: black;">© 2023 All rights reserved. • Made by TEDxPVGCOET</p>
+                <a href="https://www.ted.com/about/our-organization/our-policies-terms" style="text-decoration: none; font-size: 0.8vw; color: black;">Policies + Terms</a>
+            </div>
+        </div>
+        
     </footer>
-    <!-- Footer Area End -->
 
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
-    <script>$('div#clock').countdown(new Date('2021/04/10'));</script>
+    <img src="asset\images\arrow-up-337-svgrepo-com.svg" alt="" class="scroll-to-top" id="scroll-to-top" onclick="scrollToTop()">
 
+    <script src="js/script.js"></script>
+    <script src="js/timer.js"></script>
 </body>
-
 </html>

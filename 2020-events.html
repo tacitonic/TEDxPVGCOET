@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/partials/topBar.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/boilerplate.css">
+    <script src="js/script.js"></script>
+    <title>TEDxPVGCOET</title>
+</head>
+<body>
+    
+    <div class="topBar">
+        <img src="asset\images\TEDxPVGCOET Logo without bg.png" alt="" class="logo">
+        <div class="topBar_options">
+            <a href="" class="links" id="Home">Home</a>
+            <a href="javascipt:void(0)" class="links" id="Events" onclick="DropDown()">Events <img src="asset/images/arrow-down-338-svgrepo-com.svg" alt="" id="dropdown">
+                <div class="dropMenu">  
+                    <ul>
+                        <li>
+                            <a href="" id="2024" >Punarutthan - 2024</a>
+                        </li>
+                        <li>
+                            <a href="" id="2021" >Avant Garde - 2021</a>
+                        </li>
+                        <li>
+                            <a href="" id="2020" >Take the leap - 2020</a>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+            <a href="" class="links hide" id="punarutthan">Punarutthan - 2024</a>
+            <a href="" class="links hide" id="avant">Avant Garde - 2021</a>
+            <a href="" class="links hide" id="leap">Take the leap - 2020</a>
+            <a href="" class="links" id="Team">Team</a>
+            <a href="" class="links" id="Theme">Theme</a>
+            <button>Register</button>
+        </div>
+        <div class="topBar_toggle" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="speakers">
+        <p style="font-weight: 700;" id="The_Speakers">
+            <span style="margin-right: 0.5vw;">2020 - </span>
+            <span style="color: #D6291B;">Take the leap!</span>
+        </p>
+        <p class="event-desc">
+            The first ever event organized by TEDxPVGCOET, 'Take The Leap!', was themed aptly. Taking
+            the leap is all about making the best of the freedom and liberty given to us, giving ourselves the
+            chance to make mistakes and grow, paving the way for others to give their passion a chance,
+            and throwing in all we have got and await all that life has in store for us. So, open your mind,
+            unbound your thoughts, and let's together, Take the leap
+        </p>
+        <div class="speaker_images">
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/Taufiq-Qureshi.jpg); background-size: cover;">
+                <div>
+                    Taufiq Qureshi <br>
+
+                    <p>Taufiq Qureshi, an ace percussionist of India, referred to as a game changer, is also an acclaimed composer. Taufiq is recognized for his path-breaking and trend-setting work, as a performing artiste and as composer/arranger in the field of world music.</p>
+                </div>
+            </div>
+            <div class="speaker_image" style="border-color: rgb(223, 223, 223); background-image: url(asset/images/Speakers/Ayesha-Billimoria.jpg); background-size: cover;">
+                <div style="background-color: rgba(255, 255, 255, 0.845); color: red;">
+                    Ayesha Billimoria <br>
+                    <p>Ayesha Billimoria is a woman of many talents and possesses an innumerable collection of titles: she was named “fastest girl of India” in her teenage years, represented Maharashtra for 17 years as an athlete, holds a three-time national championship in the 200m sprint and has also partaken in rigorous training to prepare for the Olympics</p>
+                </div>
+            </div>
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/kuntal-joisher.jpg);">
+                <div>
+                    kuntal Joisher  <br>
+                    <p>For Kuntal Joisher, his whole life played out before him when he, along with other mountaineers, was trapped at Camp 2 of Mt. Everest during the devastating avalanche that swept through the encampment triggered by a massive Earthquake in April, 2015. The near death experience triggered in him a storm of emotions which would change his entire life</p>
+                </div>
+            </div>
+            <div class="speaker_image" style="border-color: rgb(223, 223, 223); background-image: url(asset/images/Speakers/priyanka-kasture.png);">
+                <div style="background-color: rgba(255, 255, 255, 0.845); color: red;">
+                    Priyanka Kasture <br>
+                    <p>Embarking in 2018, Priyanka has created and leveraged powerful content marketing strategies to build a cumulative follower-base of 500,000 people on leading social media platforms, and built a thriving multi-figure business by monetising her influence. Priyanka is currently fostering Machine Learning India (MLI), India's largest social-media driven machine learning and artificial intelligence community with over 500,000 members</p>
+                </div>
+            </div>
+            <div class="speaker_image" style="background-image: url(asset/images/Speakers/Shreenand-Bapat.jpeg);">
+                <div>
+                    Shreenand Bapat  <br>
+                    <p>Dr. Shreenand Bapat is a scholar with a PhD in Sanskrit and an MA in AIHC & Archaeology. He is a curator at the Bhandarkar Oriental Research Institute, Managing Editor at Annals of the BORI, and guest lecturer at Tilak Maharashtra Vidyapeeth and Chanakya Mandal Pariwar. Additionally, Dr. Bapat has authored 48 research papers and published eight publications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div style="display: flex; flex-direction: column;">
+            <div class="TEDxPVGCOET">
+                <p>
+                    <span style="font-size: 1.6vw; font-weight: 900;">TED</span><span style="font-size: 1.2vw; font-weight: 900;position: relative; top: -0.5vw;">x</span>
+                    <span style="font-size: 1.6vw; font-weight: 900; color: black;">PVGCOET</span><br>
+                    <span style="font-size: 0.5vw; font-weight: 900; position: relative; top: -0.5vw">x</span>
+                    <span style="font-size: 0.5vw; font-weight: 900; color: black; position: relative; top: -0.5vw">= independently organized TED event</span>
+                </p>
+            </div>
+            <div class="social_media">
+                <a href="https://www.facebook.com/TEDxPVGCOET/"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg></a>
+                <a href="https://www.instagram.com/tedxpvgcoet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                fill="#0F0F0F"></path>
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="#0F0F0F"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg></a>
+                <a href="https://x.com/TEDxPVGCOET?s=20">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path
+                            d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/tedxpvgcoet/"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                fill="#0F0F0F"></path>
+                            <path
+                                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                                fill="#0F0F0F"></path>
+                            <path
+                                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                                fill="#0F0F0F"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg></a>
+            </div>
+        </div>
+
+        <div>
+            <div class="contact">
+                <p style="font-weight: 700;" id="footer_contact">Contact</p>
+                <p> PVGCOET 44, <br> Vidya Nagari, Shivdarshan,<br> Pune, MH, India 411009</p>
+                <a href=""><p>tedx@pvgcoet.ac.in</p></a>
+                <a href="">tedxpvgcoet.com</a>
+
+            </div>
+        </div>
+
+        
+        <div>
+            <div class="contact">
+                <p style="font-weight: 700;" id="footer_about_us">About Us</p>
+                <p id="footer_about_width">A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="contact">
+                <p style="font-weight: 700;" id="footer_site_links">Newsletter</p>
+                Be the first one to know about <br> events, updates and much more <br>
+                from TEDxPVGCOET organization <br>
+                <a href="https://tedxpvgcoet.substack.com/embed"><button id="Newsletter">Subscribe</button></a>
+
+            </div>
+        </div>
+
+        <div class="end_bar">
+            <div class="line"></div>
+            <div style="display: flex; flex-direction: row; margin: 0.6vw auto 0vw auto;">
+                <p style="font-size: 0.8vw; margin: 0vw 58vw 0vw 0vw; color: black;">© 2023 All rights reserved. • Made by TEDxPVGCOET</p>
+                <a href="https://www.ted.com/about/our-organization/our-policies-terms" style="text-decoration: none; font-size: 0.8vw; color: black;">Policies + Terms</a>
+            </div>
+        </div>
+        
+    </footer>
+    <img src="asset\images\arrow-up-337-svgrepo-com.svg" alt="" class="scroll-to-top" id="scroll-to-top" onclick="scrollToTop()">
+    <script src="js/events.js"></script>
+</body>
+</html>

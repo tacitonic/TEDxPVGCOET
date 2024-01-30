@@ -1,9 +1,31 @@
-# TEDxPVGCOET
+# TEDxPVGCOET Website
 
-In the spirit of ideas worth spreading, TED has created TEDx which is a program of local, self-organized events that bring people together to share a TED-like experience, around a specific theme. TEDx events are independently licensed experiences which bring together thinkers, innovators and artists in one assembly, with the intention of promoting “Ideas Worth Spreading.”
+Welcome to the TEDxPVGCOET Website! This project is a showcase of PVGCOET's TEDx event, featuring inspiring talks and discussions.
 
-TEDxPVGCOET brings the unique TED experience to Pune. TEDxPVGCOET is a curated, day-long, immersive live experience bringing speakers, artists, and audience members together with the purpose of sharing perspectives, sparking deep discussions, and inspiring positive networks and impactful actions around ideas that matter. Our aim is to provide a platform where thinkers, visionaries, and learners will be inspired to give talks on a wide array of  idea-focused topics to foster learning, provoke conversations that matter, and inspire others.
+## Table of Contents
 
-## Website for TEDxPVGCOET
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-[tedxpvgcoet.com](https://tedxpvgcoet.com)
+## Introduction
+
+This website is designed to provide information about our TEDx event, including details about speakers, schedule, and how to participate. It is built using basic HTML, CSS, and JavaScript.
+
+## Features
+
+- **Homepage:** Engaging introduction to TEDx event.
+- **Speakers:** Information about the featured speakers.
+- **Schedule:** Event schedule with details.
+- **Registration:** How to register for the event.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   https://github.com/BlueHeart0065/TEDxPVGCOET.git

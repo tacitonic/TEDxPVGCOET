@@ -1,0 +1,621 @@
+body{
+    background-color: #232723;
+    margin: 0;
+}
+
+.topBar{
+    /* border: 1px solid white; */
+    margin: 0vw 12.5vw 2vw 12.5vw;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.logo{
+    display: flex;
+    height: 3vw;
+    width: 12vw;
+    margin-top: 2.5vw;
+}
+
+.topBar_options{
+    /* border: 1px solid blue;  */
+    /* height: fit-content; */
+    margin: 2.5vw 0vw 0vw auto;
+    font-family: 'Samarkan';
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.topBar_toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar{
+    height: 0.2vw;
+    width: 2vw;
+    background-color: #D1291D;
+    margin: 0.4vw 0;
+    border-radius: 10px;
+}
+
+.topBar_options a{
+    text-decoration: none;
+    color: #FFD23B;
+    opacity: 0.71;
+    margin: 1.5vw 2vw 0vw 2vw;
+    letter-spacing: 0.05vw;
+    transition: all 0.3s ease;
+}
+
+.topBar_options a:hover{
+    opacity: 1;
+    text-shadow: 0px 0px 1vw #D1291D;
+}
+
+.topBar_options a::after{
+    color: #D1291D;
+    width: 3vw;
+    height: 1vw;
+}
+
+.topBar_options button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.707);
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #ffd13ba8;
+    margin-left: 2vw;
+    font-size: 1vw;
+}
+
+.topBar_options a img{
+    width: 0.8vw;
+    height: 0.8vw;
+    position: relative;
+    top: 0.1vw;
+    left: 0.2vw;
+}
+
+.dropMenu{
+    display: none;
+    background-color: #d1291d67;
+    height: fit-content;
+    width: 19vw;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.dropMenu ul{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 2vw;
+}
+
+.dropMenu ul li{
+    list-style-type:square;
+    color: white;
+    padding: 0.5vw;
+    margin-left: 1vw;
+}
+
+.dropMenu a{
+    margin: 0vw 0vw 1vw 0vw;
+}
+
+.dropMenu.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vw;
+    /* background-size: cover; */
+}
+
+.phoenix{
+    margin: 5vw 0vw 0vw 15vw;
+}
+
+.phoenix img{
+    width: 20vw;
+    height: 25vw;
+}
+
+.theme_text{
+    width: 50vw;
+    text-align: center;
+    font-family: 'Samarkan';
+    margin: 5vw 0vw 0vw 5vw;
+}
+
+.theme_text h1{
+    color: #ffc13b;
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 0vw;
+}  
+
+.theme_text p{
+    color: white;
+    font-size: 1.2vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+}
+
+
+.break_line{
+    height: 0.2vw;
+    width: 40vw;
+    background-color:  #ffc13b;
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 2vw;
+}
+
+.hero .theme_desc{
+    font-family: 'Helvetica';
+    width: 40vw;
+    font-weight: 100;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.773);
+}
+
+.hero button{
+    color: white;
+    border-color: #ffc13b;
+}
+
+.theme_text button{
+    margin: 3vw auto;
+}
+
+.journey{
+    margin-top: 10vw;
+    text-align: center;
+    font-family: 'Samarkan';
+    font-weight: 100;
+    color: #ffc13b;
+}
+
+.journey_contents{
+    display: flex;
+    border-radius: 40px;
+    padding: 5vw;
+    width: 71vw;
+    margin: 5vw auto;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 1vw #ffc13b44;
+}
+
+.journey_contents div{
+    /* border: 2px solid #ffc13b; */
+    margin: 1vw;
+}
+
+.journey_contents div img{
+    width: 12vw;
+    height: 12vw;
+    /* border: 1px solid #ffc13b; */
+    /* box-shadow: 0px 0px 20px black; */
+    transition: all 0.5s ease;
+}
+
+.journey_contents div img:hover{
+    transform: scale(1.05);
+}
+
+.theme_details{
+    display: flex;
+    flex-direction: column;
+    color: #ffc13b;
+    font-family: 'Samarkan';
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vw;
+
+}
+
+.theme_details div{
+    display: flex;
+}
+
+.theme_details h2{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.theme_details img{
+    height: 1vw;
+    width: 1vw;
+    margin: 2vw;
+    cursor: pointer;
+}
+
+.points{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid greenyellow; */
+    width: 70vw;
+    padding: 2vw;
+}
+
+.points img{
+    width: 20vw;
+    height: 20vw;
+    box-shadow: 0px 0px 10vw #ffc13b38;
+}
+
+.points li{
+    font-family: 'Helvetica';
+    font-size: 1.3vw;
+    width: 40vw;
+    margin: 1vw 0vw;
+    color: white;
+}
+
+b{
+    color: #ffc13b;
+}
+
+.footer{
+    background-color: rgb(231, 231, 231);
+    height: 25vw;
+    width: 90vw;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    color: red;
+    margin-bottom: 2vw;
+    margin-top: 15vw;
+}
+
+.TEDxPVGCOET{
+    margin: 4vw 4vw 0vw 4vw;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 20vw;
+    /* border-top: 2px solid black; */
+    margin: 0vw 0vw 0vw 3vw;
+}
+
+.social_media a svg{
+    height: 2vw;
+    width: 2vw;
+    margin: 0vw 1vw 0vw 1vw;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+.social_media a svg path{
+    transition: all 0.3s ease;
+}
+
+.social_media a svg:hover path{
+    fill: #D1291D;
+    transform: scale(1.2);
+}
+
+.contact{
+    margin: 5vw 0vw 0vw 4vw;
+    color: black;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul li{
+    margin-left: -2vw;
+}
+
+#footer_about_us , #footer_contact , #footer_site_links{
+    font-size: 1.2vw;
+}
+
+#footer_about_width{
+    width: 17vw;
+}
+
+.end_bar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90vw;
+    margin-top: 20vw;
+    justify-content: center;
+    /* border: 1px solid greenyellow; */
+}
+
+.line{
+    height: 1px;
+    margin: auto;
+    background-color: black;
+    width: 83vw; 
+}
+
+.contact button{
+    margin: 1.5vw 0vw 0vw 0vw;
+    color: red;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: red;
+    background-color: #ffc13b;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 768px){
+
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    button{
+        font-size: 4vw;
+        width: fit-content;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .topBar{
+        margin: 0vw 4vw 15vw 4vw;
+        font-size: 4vw;
+    }
+
+    .logo{
+        height: 10vw;
+        width: 40vw;
+        margin-top: 7vw;
+    }
+
+    .topBar_options{
+        display: none;
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 25vw;
+        right: 0vw;
+        /* width: fit-content; */
+        width: 100%;
+        padding: 5vw 0vw 15vw 0vw;
+        text-align: center;
+        /* background-color: #762621; */
+        background-color: #ffc13b;
+        /* border-radius: 30px; */
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
+    }
+
+    .topBar button{
+        color: red;
+        border-color: white;
+    }
+
+    .topBar_options.show{
+        display: flex;
+    }
+
+    .topBar_toggle{
+        display: flex;
+        margin-left: 43vw;
+        margin-top: 8vw;
+    }
+
+    .bar{
+        height: 1vw;
+        width: 8vw;
+        margin: 0.8vw 0;
+    }
+
+    .topBar_options a{
+        margin-top: 10vw;
+        color: black;
+        margin: 10vw auto 0vw auto;
+        font-weight: 500;
+        font-size: 5vw;
+    }
+
+    .topBar_options button{
+        font-size: 4vw;
+        margin: 10vw auto 0vw auto;   
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    #Events{
+        display: none;
+    }
+
+    .dropMenu{
+        display: none;
+    }
+
+    .hide{
+        display: flex;
+    }
+
+    .hero{
+        height: 200vw;
+        padding: 0vw;
+    }
+
+    .phoenix{
+        margin: 0vw auto 0vw auto;
+        height: fit-content;
+    }
+
+    .phoenix img{
+        width: 60vw;
+        height: 75vw;
+    }
+
+    .theme_text{
+        margin: 0vw auto 0vw auto;
+        width: 90vw;
+        position: relative;
+        top: -30vw;
+    }
+
+    .theme_text h1{
+        font-family: 'Samarkan';
+        font-size: 10vw;
+        margin-top: 0vw;
+        
+    }
+
+    .theme_text p{
+        font-size: 5vw;
+    }
+
+    .hero .theme_desc{
+        margin-top: 5vw;
+        width: 80vw;
+        color: white;
+    }
+
+    .theme_text button{
+        margin-top: 10vw;
+    }
+
+    .break_line{
+        width: 70vw;
+        margin-top: 3vw;
+        height: 0.2vw;
+    }
+
+    .journey h1{
+        font-size: 7vw;
+        font-weight: 100;
+    }
+
+    .journey_contents{
+        justify-content: center;
+    }
+
+    .journey_contents p{
+        font-size: 6vw;
+        margin-top: 0vw;
+    }
+
+    .journey_contents div img{
+        margin-top: 10vw;
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .theme_details h2{
+        font-size: 10vw;
+        font-weight: 100;
+    }
+
+    .theme_details img{
+        height: 60vw;
+        width: 60vw;
+
+    }
+
+    .points{
+        display: flex;
+        justify-content: center;
+        font-weight: 100;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .points ul{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .points li{
+        font-size: 5vw;
+        font-weight: 100;
+        width: 80vw;
+        text-align: center;
+        margin-top: 5vw;
+        list-style-type: none;
+        position: relative;
+        left: -5vw;
+    }
+
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width:auto;
+        border-radius: 0px;
+        margin: 20vw 0vw 0vw 0vw;
+    }
+
+    .TEDxPVGCOET{
+        transform: scale(3.5);
+        margin: 8vw 0vw 0vw 20vw;
+        width: fit-content;
+    }
+
+    .social_media{
+        margin: 5vw 0vw 0vw 5vw;
+    }
+
+    .social_media a svg{
+        height: 10vw;
+        width: 10vw;
+        margin-right: 5vw;
+    }
+
+    .contact{
+        margin-top: 10vw;
+        font-size: 4vw;
+    }
+
+    #footer_about_us , #footer_contact , #footer_site_links{
+        font-size: 5vw;
+    }
+
+    #footer_about_width{
+        width: 80vw;
+    }
+
+    .contact ul li{
+        margin-left: -7vw;
+        margin-bottom: 4vw;
+    }
+
+    .end_bar{
+        display: none;
+    }
+
+    .contact button{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
+    
+
+}

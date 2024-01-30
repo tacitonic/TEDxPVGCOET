@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/Helvetica-BoldOblique.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/Helvetica-Oblique.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/helvetica-compressed-5871d14b6903a.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/helvetica-light-587ebe5a59211.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../../asset/fonts/Helvetica.ttf); 
+    font-weight: 400;
+}
+@font-face {
+    font-family: Samarkan;
+    src: url(../../asset/fonts/SAMARN__.TTF); 
+}
+
+
+head{
+    display: none;
+} 
+
+
+button{
+    background-color: transparent;
+    color: black;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #D1291D;
+    margin-left: 2vw;
+    font-size: 1vw;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #D1291D;
+    border-color: #D1291D;
+}
+
+script{
+    display: none;
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #D1291D;
+    padding: 1vw;
+    transition: all 0.5s ease;
+}
+
+.scroll-to-top:hover{
+    background-color: #ff4335;
+}
+
+
+@media only screen and (max-width : 768px){
+
+
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    button{
+        font-size: 4vw;
+        width: fit-content;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .scroll-to-top{
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100px;
+        cursor: pointer;
+        background-color: #D1291D;
+        padding: 5vw;
+        transition: all 0.5s ease;
+        opacity: 0.5;
+    }
+}

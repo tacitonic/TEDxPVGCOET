@@ -1,0 +1,142 @@
+.footer{
+    background-color: rgb(231, 231, 231);
+    height: 25vw;
+    width: 90vw;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    color: red;
+    margin-bottom: 2vw;
+}
+
+.TEDxPVGCOET{
+    margin: 4vw 4vw 0vw 4vw;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 20vw;
+    /* border-top: 2px solid black; */
+    margin: 0vw 0vw 0vw 3vw;
+}
+
+.social_media a svg{
+    height: 2vw;
+    width: 2vw;
+    margin: 0vw 1vw 0vw 1vw;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+.social_media a svg path{
+    transition: all 0.3s ease;
+}
+
+.social_media a svg:hover path{
+    fill: #D1291D;
+    transform: scale(1.2);
+}
+
+.contact{
+    margin: 5vw 0vw 0vw 4vw;
+    color: black;
+}
+
+.contact button{
+    margin: 1.5vw 0vw 0vw 0vw;
+    cursor: pointer;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul li{
+    margin-left: -2vw;
+}
+
+#footer_about_us , #footer_contact , #footer_site_links{
+    font-size: 1.2vw;
+}
+
+#footer_about_width{
+    width: 17vw;
+}
+
+.end_bar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90vw;
+    margin-top: 20vw;
+    justify-content: center;
+    /* border: 1px solid greenyellow; */
+}
+
+.line{
+    height: 1px;
+    margin: auto;
+    background-color: black;
+    width: 83vw; 
+}
+
+@media only screen and (max-width : 768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width:auto;
+        border-radius: 0px;
+        margin: 0vw 0vw 0vw 0vw;
+    }
+
+    .TEDxPVGCOET{
+        transform: scale(3.5);
+        margin: 8vw 0vw 0vw 20vw;
+        width: fit-content;
+    }
+
+    .social_media{
+        margin: 5vw 0vw 0vw 5vw;
+    }
+
+    .social_media a svg{
+        height: 10vw;
+        width: 10vw;
+        margin-right: 5vw;
+    }
+
+    .contact{
+        margin-top: 10vw;
+        font-size: 4vw;
+    }
+
+    #footer_about_us , #footer_contact , #footer_site_links{
+        font-size: 5vw;
+    }
+
+    #footer_about_width{
+        width: 80vw;
+    }
+
+    .contact ul li{
+        margin-left: -7vw;
+        margin-bottom: 4vw;
+    }
+
+    .end_bar{
+        display: none;
+    }
+
+    .contact button{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        font-size: 4vw;
+        padding: 2vw 5vw;
+    }
+}
