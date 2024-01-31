@@ -106,6 +106,7 @@ script{
     }
 
     img{
-        filter: invert(0);
+        filter: invert(0) brightness(100%) contrast(100%);
     }
+
 }

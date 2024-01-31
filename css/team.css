@@ -226,6 +226,10 @@ body{
     margin-left: -5vw;
 }
 
+.team_display2{
+    display: none;
+}
+
 @media only screen and (max-width : 768px) {
 
 
@@ -234,21 +238,26 @@ body{
         height: 80vw;
         width: 90vw;
         margin: 30vw auto 10vw auto;
+        overflow: hidden;
     }
 
     .hero h1 {
-        font-size: 9vw;
+        font-size: 14vw;
         margin: 15vw auto 0vw auto;
     }
 
     .team_display {
-        width: 80vw;
-        height: 13vw;
-        margin: 8vw auto 0vw auto;
+        display: none;
+    }
+
+    .team_display2{
+        display: flex;
+        margin-top: 12vw;
+        margin-left: 2vw;
     }
 
     .hero button {
-        margin: 10vw auto 0vw auto;
+        margin: 8vw auto 0vw auto;
     }
 
     .heads {
