@@ -95,3 +95,7 @@ function scrollToTop() {
 function toHome() {
     window.location.href = 'index.html'
 }
+
+function redirectToForm() {
+    window.location.href = "https://forms.gle/XoAvwXA2T8JQbdXU8";
+}
