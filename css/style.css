@@ -34,9 +34,15 @@ button{
     line-height: 0vw;
 }
 
+.curve{
+    height: 2vw; 
+    width: 19vw; 
+    margin-top: -5vw; 
+    margin-bottom: 1vw;
+}
+
 .hero_list{
     display: flex;
-    flex-direction: column;
     /* border: 1px solid white; */
     width: fit-content;
     height: fit-content;
@@ -48,7 +54,9 @@ button{
 
 .list_row{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 20vw;
 }
 
 .list_column{
@@ -364,12 +372,22 @@ iframe{
         margin-top: 35vw;
     }
 
+    .curve{
+        width: 50vw;
+        height: 4vw;
+        position: relative;
+        top: -4vw;
+    }
+
     .hero_list{
-        margin:auto;
+        margin: 8vw 0vw 0vw 16vw;
     }
 
     .list_row{
-        flex-direction: column;
+        justify-content: center;
+        flex-direction: row;
+        /* border: 1px solid greenyellow; */
+        width: 70vw;
     }
 
     .list_column{
@@ -377,7 +395,7 @@ iframe{
         font-size: 3vw;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 5vw;
+        margin: 0vw auto 5vw auto;
     }
 
     .box{
@@ -393,7 +411,7 @@ iframe{
         height: 50vw;
         position:relative;
         display: flex;
-        margin: 30vw 0vw 0vw 37vw;
+        margin: 10vw 0vw 0vw 37vw;
     }
 
     #ill1_2{
@@ -406,13 +424,8 @@ iframe{
     }
 
     .X{
-        position: relative;
-        left: 0vw;
-        right: 0vw;
-        font-size: 3vw;
-        text-align: center;
+       display: none;
     }
-
     
     .licencee{
         top: 0;
@@ -547,5 +560,9 @@ iframe{
         height: 170vw;
     }
 
+    #list-exc1, #list-exc2{
+        position: relative;
+        left: -1.2vw;
+    }
 
 }
